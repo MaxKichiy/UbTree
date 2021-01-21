@@ -1,0 +1,24 @@
+.visibility-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
+h1,
+h2,
+h3,
+h4,
+ul,
+li,
+p {
+  padding: 0;
+  margin: 0;
+}
+.button {
+  width: 17rem;
+  height: 3.1rem;
+  border-radius: 5px;
+  background-color: $primary-color;
+}
