@@ -1,0 +1,49 @@
+.setup {
+  background-color: #f5f5f5;
+  &__wrapper {
+    width: 90%;
+    margin: 0 auto;
+    padding: 3rem 0;
+  }
+  &__list {
+    margin: 3rem 0;
+    list-style: none;
+    // counter-reset: my-awesome-counter;
+  }
+  &__item {
+    counter-increment: my-awesome-counter;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    &::before {
+      content: counter(my-awesome-counter);
+      // position: relative;
+      padding: 0.21rem 0.68rem;
+      margin-right: 1rem;
+      border-radius: 7px;
+      color: $bg-color;
+      font-size: 1.5rem;
+      background-color: rgba($primary-color, 0.7);
+      text-align: center;
+      font-weight: normal;
+    }
+    &:last-of-type::before {
+      content: counter(my-awesome-counter);
+      background-color: $secondary-color;
+      color: #333;
+    }
+    &-title {
+      width: 80%;
+      color: #333;
+      font-weight: normal;
+    }
+    &-img {
+      // min-width: 30%;
+      margin: 2rem auto;
+    }
+  }
+  &__spec {
+    color: rgba(147, 144, 144, 1);
+    text-align: center;
+  }
+}
