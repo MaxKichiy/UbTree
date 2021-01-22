@@ -8,7 +8,7 @@ function Main() {
       </h1>
       <section className='main-page'>
         <div className='main-page__wrapper'>
-          <h2 className='main-page__title'>Казка зовсім поруч</h2>
+          <h2 className='main-page__title header__section-title'>Казка зовсім поруч</h2>
           <p className='main-page__text'>Замовте її із доставкою у своє місто</p>
           <div className='main-page__button button button__primary'>
             <a href='#'>В каталог</a>

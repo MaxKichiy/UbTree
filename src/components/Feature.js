@@ -4,7 +4,7 @@ function Feature() {
   return (
     <section className='feature'>
       <div className='feature__wrapper'>
-        <h2 className='feature__header'>Чому саме у нас?</h2>
+        <h2 className='feature__header header__section-title'>Чому саме у нас?</h2>
         <ul className='feature__list'>
           <li className='feature__item'>
             <div className='feature__text'>

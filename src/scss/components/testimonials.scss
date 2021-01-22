@@ -1,0 +1,53 @@
+.testimonials {
+  background-color: #fff;
+  &__wrapper {
+    width: 90%;
+    margin: 0 auto;
+    padding: 2rem 0;
+  }
+  &__header {
+    margin-bottom: 5rem;
+  }
+  &__list {
+    list-style: none;
+  }
+  &__item {
+    position: relative;
+    display: flex;
+    padding: 5.75rem 1rem 1.25rem;
+    min-height: 12.5rem;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background: url('../../assets/clarity_block-quote-line1.png') 0 0,
+      url('../../assets/clarity_block-quote-line.png') 100% 100%;
+    background-repeat: no-repeat;
+    background-color: #f5f5f5;
+    border-radius: 11px;
+    margin-bottom: 5rem;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+  }
+  &__img {
+    display: flex;
+    flex-direction: column;
+    // justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: -25%;
+    left: 50%;
+    transform: translateX(-50%);
+
+    & img {
+      border-radius: 50%;
+    }
+    & figcaption {
+      color: rgba(51, 51, 51, 0.7);
+      margin: 0.3rem 0;
+    }
+  }
+  &__text {
+    font-size: 1rem;
+    text-align: center;
+    color: #333;
+  }
+}
