@@ -1,0 +1,35 @@
+.footer {
+  background-color: #333333;
+  color: $bg-color;
+  &__wrapper {
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+  &__nav {
+    display: none;
+  }
+  &__logo {
+    text-align: center;
+    font-family: Righteous;
+    font-size: 3.125rem;
+    flex-grow: 1;
+  }
+  &__links {
+    width: 5rem;
+    justify-content: space-between;
+    position: absolute;
+    list-style: none;
+    display: flex;
+    right: 1rem;
+    top: 50%;
+    transform: translateY(-30%);
+  }
+  &__link {
+    & svg {
+      width: 30px;
+      height: 30px;
+    }
+  }
+}
