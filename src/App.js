@@ -3,6 +3,7 @@ import Header from './components/Header';
 import Main from './components/Main';
 import Setup from './components/Setup';
 import Testimonials from './components/Testimonials';
+import Top from './components/Top';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <Feature />
       <Testimonials />
       <Setup />
+      <Top />
     </div>
   );
 }
