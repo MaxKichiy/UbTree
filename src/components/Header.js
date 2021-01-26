@@ -14,7 +14,7 @@ function Header(props) {
         <nav className='header__nav nav'>
           <ul className='nav__list'>
             <li className='nav__list-item'>
-              <a href='#'>Каталог</a>
+              <a href='/catalog'>Каталог</a>
             </li>
             <li className='nav__list-item'>
               <a href='#'>Часті запитання</a>
@@ -23,7 +23,7 @@ function Header(props) {
               <a href='#'>Про нас</a>
             </li>
             <li className='nav__list-item'>
-              <a href='#'>Корзина</a>
+              <a href='/cart'>Корзина</a>
             </li>
           </ul>
         </nav>

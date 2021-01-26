@@ -11,7 +11,7 @@ function Main() {
           <h2 className='main-page__title header__section-title'>Казка зовсім поруч</h2>
           <p className='main-page__text'>Замовте її із доставкою у своє місто</p>
           <div className='main-page__button button button__primary'>
-            <a href='#'>
+            <a href='/catalog'>
               <span className='large'>Перейти&nbsp;</span>
               <span className='small'>В</span> каталог
             </a>

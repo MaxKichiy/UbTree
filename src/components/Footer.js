@@ -9,7 +9,7 @@ function Footer() {
         <nav className='footer__nav'>
           <ul className='footer__nav-list'>
             <li className='footer__nav-item'>
-              <a href='#'>Каталог</a>
+              <a href='/catalog'>Каталог</a>
             </li>
             <li className='footer__nav-item'>
               <a href='#'>Контакти</a>
@@ -23,7 +23,7 @@ function Footer() {
           </ul>
         </nav>
         <h2 className='footer__logo'>
-          urbantree{' '}
+          urbantree
           <span>
             <img src={candyLeft} alt='' />
             <img src={candyRight} alt='' />
