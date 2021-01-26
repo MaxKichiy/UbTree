@@ -7,7 +7,9 @@ function Testimonials(props) {
   return (
     <section className='testimonials'>
       <div className='testimonials__wrapper'>
-        <h2 className='testimonials__header header__section-title'>Наші клієнти</h2>
+        <h2 className='testimonials__header header__section-title'>
+          Наші клі<span>є</span>нти
+        </h2>
         <ul className='testimonials__list'>
           <li className='testimonials__item'>
             <div className='testimonials__img'>

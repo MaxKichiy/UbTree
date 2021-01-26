@@ -26,6 +26,7 @@
       background-color: rgba($primary-color, 0.7);
       text-align: center;
       font-weight: normal;
+      min-width: 36.28px;
     }
     &:last-of-type::before {
       content: counter(my-awesome-counter);
@@ -46,5 +47,48 @@
   &__spec {
     color: rgba(147, 144, 144, 1);
     text-align: center;
+  }
+}
+
+@media (min-width: 768px) {
+  .setup {
+    position: relative;
+    z-index: 1;
+    &__wrapper {
+      width: 100%;
+      padding: 3.75rem;
+    }
+    &__bg-puzzle {
+      position: absolute;
+      left: 0;
+      z-index: -1;
+      top: -14rem;
+      background-image: url('../../assets/et_puzzle.png');
+    }
+
+    &__header {
+      margin-bottom: 3.75rem;
+      z-index: 3;
+    }
+    &__game {
+      z-index: 10;
+      width: 35.25rem;
+      height: 28.68rem;
+      background-color: rgba(255, 255, 255, 0.9);
+      margin: 0 auto;
+      border-radius: 0.5rem;
+      box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.15);
+      margin-bottom: 2rem;
+    }
+    &__list {
+      width: 35.25rem;
+      margin: 0 auto;
+    }
+    &__item {
+      margin-bottom: 1rem;
+    }
+    &__item-img {
+      display: none;
+    }
   }
 }

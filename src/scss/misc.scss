@@ -18,6 +18,7 @@ p {
   margin: 0;
 }
 .button {
+  font-family: Inter;
   width: 17rem;
   height: 3.1rem;
   border-radius: 5px;
@@ -25,9 +26,18 @@ p {
 }
 
 .header__section-title {
-  font-family: Roboto, sans-serif;
+  font-family: Inter, Roboto, sans-serif;
   font-size: 2rem;
   font-weight: bold;
   text-align: center;
   color: #333;
+}
+@media (min-width: 768px) {
+  .header__section-title {
+    font-size: 3.2rem;
+    font-weight: 200;
+    text-align: center;
+    text-transform: uppercase;
+    color: #333;
+  }
 }

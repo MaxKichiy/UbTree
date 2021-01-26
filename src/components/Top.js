@@ -5,7 +5,7 @@ function Top() {
   return (
     <section className='top'>
       <div className='top__wrapper'>
-        <h2 className='top__header header__section-title'>Найпопулярніша модель</h2>
+        <h2 className='top__header header__section-title'>Топ продаж</h2>
         <div className='top__img'>
           <img src={shishTOP} alt='' />
         </div>

@@ -16,7 +16,8 @@
     color: $bg-color;
   }
   &__title {
-    margin-top: 27rem;
+    font-family: Inter;
+    margin-top: 21rem;
     color: $bg-color;
   }
   &__text {
@@ -34,9 +35,32 @@
     & a {
       color: $bg-color;
       text-decoration: none;
-      font-family: Roboto;
+      font-family: inherit;
       font-size: 2rem;
       text-transform: uppercase;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .main-page {
+    &__title {
+      // text-transform: uppercase;
+      // font-weight: 300;
+      // font-size: 3.2rem;
+      // font-weight: normal;
+      margin-top: 28rem;
+    }
+    &__text {
+      font-size: 1.8rem;
+      width: 21rem;
+      font-weight: normal;
+    }
+    &__button {
+      font-weight: bold;
+      & span {
+        display: none;
+      }
     }
   }
 }
