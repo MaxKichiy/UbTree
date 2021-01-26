@@ -41,3 +41,18 @@ p {
     color: #333;
   }
 }
+@media (min-width: 1220px) {
+  .header__section-title {
+    font-size: 4.37rem;
+    font-weight: 200;
+    text-align: center;
+    text-transform: uppercase;
+    color: #333;
+    position: relative;
+  }
+  .title-element {
+    position: absolute;
+    bottom: -2rem;
+    right: 17rem;
+  }
+}

@@ -12,17 +12,17 @@ function Header(props) {
           <a href='/'>urbantree</a>
         </div>
         <nav className='header__nav nav'>
-          <ul className='nav-list'>
-            <li className='nav-list__item'>
+          <ul className='nav__list'>
+            <li className='nav__list-item'>
               <a href='#'>Каталог</a>
             </li>
-            <li className='nav-list__item'>
+            <li className='nav__list-item'>
               <a href='#'>Часті запитання</a>
             </li>
-            <li className='nav-list__item'>
+            <li className='nav__list-item'>
               <a href='#'>Про нас</a>
             </li>
-            <li className='nav-list__item'>
+            <li className='nav__list-item'>
               <a href='#'>Корзина</a>
             </li>
           </ul>

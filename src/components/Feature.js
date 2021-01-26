@@ -1,10 +1,13 @@
 import React from 'react';
+import headerStyle from '../assets/Vector1.png';
 
 function Feature() {
   return (
     <section className='feature'>
       <div className='feature__wrapper'>
-        <h2 className='feature__header header__section-title'>Чому саме у нас?</h2>
+        <h2 className='feature__header header__section-title'>
+          Чому саме у нас?<img src={headerStyle} className='title-element'></img>
+        </h2>
         <ul className='feature__list'>
           <li className='feature__item'>
             <div className='feature__img'>
@@ -30,6 +33,7 @@ function Feature() {
           <li className='feature__item'>
             <div className='feature__img'>
               <svg
+                className='obmen'
                 width='50'
                 height='50'
                 viewBox='0 0 50 50'

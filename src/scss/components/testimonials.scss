@@ -97,3 +97,41 @@
     }
   }
 }
+@media (min-width: 1220px) {
+  .testimonials {
+    &__wrapper {
+      width: 100%;
+      max-width: 1440px;
+      padding: 5rem 0;
+    }
+    &__header {
+      & .title-element {
+        left: 30%;
+      }
+      margin-bottom: 10rem;
+    }
+    &__list {
+      width: 100%;
+      display: flex;
+      justify-content: space-evenly;
+    }
+    &__item {
+      width: 25rem;
+      display: flex;
+      flex-wrap: wrap;
+      padding: 5rem 0;
+    }
+    &__img {
+      position: absolute;
+      top: -15%;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    &__text {
+      width: 380px;
+      text-align: center;
+      margin-left: 0;
+      padding: 1rem;
+    }
+  }
+}

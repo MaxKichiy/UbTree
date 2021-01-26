@@ -6,6 +6,7 @@ import part4 from '../assets/part4.png';
 import part5 from '../assets/part5.png';
 import part6 from '../assets/part6.png';
 import puzzle from '../assets/et_puzzle.png';
+import headerStyle from '../assets/Vector1.png';
 
 function Setup() {
   return (
@@ -14,7 +15,9 @@ function Setup() {
         <div className='setup__bg-puzzle'>
           <img src={puzzle} alt='' />
         </div>
-        <h2 className='setup__header header__section-title'>Скласти?! Не проблема</h2>
+        <h2 className='setup__header header__section-title'>
+          Скласти?! Не проблема<img src={headerStyle} className='title-element'></img>
+        </h2>
         <div className='setup__game'>&nbsp;</div>
         <ol className='setup__list'>
           <li className='setup__item'>

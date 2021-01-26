@@ -39,6 +39,9 @@
       font-size: 2rem;
       text-transform: uppercase;
     }
+    & .large {
+      display: none;
+    }
   }
 }
 
@@ -58,8 +61,31 @@
     }
     &__button {
       font-weight: bold;
-      & span {
+      & .small,
+      & .large {
         display: none;
+      }
+    }
+  }
+}
+@media (min-width: 1220px) {
+  .main-page {
+    &__wrapper {
+      width: 100%;
+      max-width: 1440px;
+      padding: 3rem 1.25rem;
+    }
+    &__text {
+      font-size: 2.5rem;
+      width: 31rem;
+    }
+    &__button {
+      width: 31.25rem;
+      height: 3.93rem;
+      font-weight: 500;
+      & .small,
+      & .large {
+        display: inline-block;
       }
     }
   }

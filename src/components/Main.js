@@ -12,7 +12,8 @@ function Main() {
           <p className='main-page__text'>Замовте її із доставкою у своє місто</p>
           <div className='main-page__button button button__primary'>
             <a href='#'>
-              <span>В</span> каталог
+              <span className='large'>Перейти&nbsp;</span>
+              <span className='small'>В</span> каталог
             </a>
           </div>
         </div>

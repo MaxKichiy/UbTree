@@ -119,6 +119,58 @@
       width: 6.25rem;
       height: 6.25rem;
       font-size: 3.75rem;
+      & svg {
+        width: 73px;
+        height: 73px;
+      }
+      & .obmen {
+        width: 100px;
+        height: 100px;
+      }
+    }
+  }
+}
+
+@media (min-width: 1220px) {
+  .feature {
+    &__wrapper {
+      width: 100%;
+      max-width: 1440px;
+      padding: 3rem 1.25rem;
+    }
+    &__header {
+      margin-bottom: 5rem;
+    }
+    &__list {
+      width: 100%;
+      display: grid;
+      grid-template: auto auto / 480px 480px;
+      justify-content: space-around;
+    }
+    &__img {
+      display: grid;
+
+      grid-row-end: 1;
+      align-self: flex-start;
+      justify-self: flex-start;
+    }
+    &__item {
+      row-gap: 1rem;
+      grid-template: 120px 120px / 110px auto;
+      align-items: center;
+      &-text {
+        padding: 1rem 1rem;
+        font-size: 1.5rem;
+        min-width: 0;
+        min-height: 120px;
+        grid-column-start: 1;
+        grid-column-end: span 2;
+      }
+      &-title {
+        font-size: 1.87rem;
+        letter-spacing: 0;
+        margin-left: 0;
+      }
     }
   }
 }

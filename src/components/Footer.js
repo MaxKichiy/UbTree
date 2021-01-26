@@ -1,4 +1,6 @@
 import React from 'react';
+import candyLeft from '../assets/whh_candycaneLeft.png';
+import candyRight from '../assets/whh_candycaneRight.png';
 
 function Footer() {
   return (
@@ -6,13 +8,27 @@ function Footer() {
       <div className='footer__wrapper'>
         <nav className='footer__nav'>
           <ul className='footer__nav-list'>
-            <li className='footer__nav-item'>Каталог</li>
-            <li className='footer__nav-item'>Контакти</li>
-            <li className='footer__nav-item'>Як обрати ялинку</li>
-            <li className='footer__nav-item'>Повернення</li>
+            <li className='footer__nav-item'>
+              <a href='#'>Каталог</a>
+            </li>
+            <li className='footer__nav-item'>
+              <a href='#'>Контакти</a>
+            </li>
+            <li className='footer__nav-item'>
+              <a href='#'>Як обрати ялинку</a>
+            </li>
+            <li className='footer__nav-item'>
+              <a href='#'>Повернення</a>
+            </li>
           </ul>
         </nav>
-        <h2 className='footer__logo'>urbantree</h2>
+        <h2 className='footer__logo'>
+          urbantree{' '}
+          <span>
+            <img src={candyLeft} alt='' />
+            <img src={candyRight} alt='' />
+          </span>
+        </h2>
         <ul className='footer__links'>
           <li className='footer__link'>
             <svg

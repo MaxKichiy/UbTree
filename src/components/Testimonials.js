@@ -2,13 +2,14 @@ import React from 'react';
 import pic1 from '../assets/pic1.jpg';
 import pic2 from '../assets/pic2.jpg';
 import pic3 from '../assets/pic3.jpg';
+import headerStyle from '../assets/Vector1.png';
 
 function Testimonials(props) {
   return (
     <section className='testimonials'>
       <div className='testimonials__wrapper'>
         <h2 className='testimonials__header header__section-title'>
-          Наші клі<span>є</span>нти
+          Наші клі<span>є</span>нти<img src={headerStyle} className='title-element'></img>
         </h2>
         <ul className='testimonials__list'>
           <li className='testimonials__item'>
