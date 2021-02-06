@@ -1,29 +1,30 @@
 import React from 'react';
+import { Link, NavLink } from 'react-router-dom';
 import tree from '../assets/misc/tree.png';
 
-function Header(props) {
+function Header() {
   return (
     <header className='header'>
       <div className='header__wrapper'>
-        <a href='#' className='header__button toggle__button'>
+        <Link href='/menu' className='header__button toggle__button'>
           <img src={tree} alt='toggle menu button' />
-        </a>
+        </Link>
         <div className='header__logo'>
-          <a href='/'>urbantree</a>
+          <Link to='/'>urbantree</Link>
         </div>
         <nav className='header__nav nav'>
           <ul className='nav__list'>
             <li className='nav__list-item'>
-              <a href='/catalog'>Каталог</a>
+              <NavLink to='/catalog'>Каталог</NavLink>
             </li>
             <li className='nav__list-item'>
-              <a href='#'>Часті запитання</a>
+              <NavLink to='/faq'>Часті запитання</NavLink>
             </li>
             <li className='nav__list-item'>
-              <a href='#'>Про нас</a>
+              <NavLink to='/about'>Про нас</NavLink>
             </li>
             <li className='nav__list-item'>
-              <a href='/cart'>Корзина</a>
+              <NavLink to='/cart'>Корзина</NavLink>
             </li>
           </ul>
         </nav>
