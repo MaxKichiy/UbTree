@@ -58,10 +58,10 @@
 @media (min-width: 1220px) {
   .header {
     &__wrapper {
-      width: 100%;
+      width: 80%;
       max-width: 1440px;
       padding: 0 1.25rem;
-      margin: 0;
+      margin: 0 auto;
     }
     &__button {
       display: none;

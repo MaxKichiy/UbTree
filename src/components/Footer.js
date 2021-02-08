@@ -1,25 +1,25 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React, { useEffect, useState } from 'react';
+import { Link, useHistory } from 'react-router-dom';
 import candyLeft from '../assets/whh_candycaneLeft.png';
 import candyRight from '../assets/whh_candycaneRight.png';
 
-function Footer() {
+function Footer({ mainPage }) {
   return (
-    <section className='footer'>
+    <footer className={`footer${mainPage ? ' footer__main' : ''}`}>
       <div className='footer__wrapper'>
         <nav className='footer__nav'>
           <ul className='footer__nav-list'>
             <li className='footer__nav-item'>
-              <a href='/catalog'>Каталог</a>
+              <Link to='/catalog'>Каталог</Link>
             </li>
             <li className='footer__nav-item'>
-              <a href='#'>Контакти</a>
+              <Link to='#'>Контакти</Link>
             </li>
             <li className='footer__nav-item'>
-              <a href='#'>Як обрати ялинку</a>
+              <Link to='#'>Як обрати ялинку</Link>
             </li>
             <li className='footer__nav-item'>
-              <a href='#'>Повернення</a>
+              <Link to='#'>Повернення</Link>
             </li>
           </ul>
         </nav>
@@ -83,7 +83,7 @@ function Footer() {
           </li>
         </ul>
       </div>
-    </section>
+    </footer>
   );
 }
 

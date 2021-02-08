@@ -15,23 +15,35 @@ import { context } from './index';
 
 function App() {
   const ctx = useContext(context);
-  console.log('🚀 ~ file: App.js ~ line 18 ~ App ~ context', ctx.isAuth);
 
   return (
     <div className='app'>
       <Header />
+      <main className='main'>
+        <Switch>
+          <Route path='/catalog' component={Catalogue} />
+          <Route path='/cart' component={Cart} />
+          <Route path='/pu' component={Panel} />
+          <Route path='/login' component={Login} />
+        </Switch>
+        <h1 className='main__slogan visibility-hidden'>
+          Urbantree- найкращий магазин ялинок в Україні
+        </h1>
+        <Route path='/' exact component={Main} />
+        <Route path='/' exact component={Feature} />
+        <Route path='/' exact component={Testimonials} />
+        <Route path='/' exact component={Setup} />
+        <Route path='/' exact component={Top} />
+      </main>
       <Switch>
-        <Route path='/catalog' component={Catalogue} />
-        <Route path='/cart' component={Cart} />
-        <Route path='/pu' component={Panel} />
-        <Route path='/login' component={Login} />
+        <Route path='/' exact>
+          <Footer mainPage={true} />
+        </Route>
+        <Route path='/'>
+          <Footer />
+        </Route>
+        <Footer />
       </Switch>
-      <Route path='/' exact component={Main} />
-      <Route path='/' exact component={Feature} />
-      <Route path='/' exact component={Testimonials} />
-      <Route path='/' exact component={Setup} />
-      <Route path='/' exact component={Top} />
-      <Footer />
     </div>
   );
 }
